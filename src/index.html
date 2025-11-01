@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precieux Portfolio</title>
+    <link href="/src/css/output.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+</head>
+<body>
+  <!--Hero section-->
+  <section id="hero"class=" bg-cover bg-center h-screen">
+    <header class="fixed w-full top-0 z-50 bg-gray-800/40 backdrop-blur-md">
+      <nav class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+        <span class="text-blue-400 font-bold lg:text-lg sm:text-sm md:text-base">
+          Précieux Mabengo | Étudiant en Informatique
+        </span>
+
+        <!-- Bouton hamburger -->
+        <button id="menu-btn" class="block md:hidden focus:outline-none">
+          <svg class="w-6 h-6 text-gray-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+
+        <!-- Menu -->
+        <ul id="menu" class="hidden text-gray-200 md:flex space-x-6 text-sm font-medium">
+          <li class="hover:scale-105 transition-ease-in-out duration-300"><a href="#hero" class="hover:text-blue-500 ">Accueil</a></li>
+          <li class="hover:scale-105 transition-ease-in-out duration-300"><a href="#about" class="hover:text-blue-500 ">À propos de moi</a></li>
+          <li class="hover:scale-105 transition-ease-in-out duration-300"><a href="#projects" class="hover:text-blue-500 ">Mes projets</a></li>
+          <li class="hover:scale-105 transition-ease-in-out duration-300"><a href="#contact" class="hover:text-blue-500 ">Contacts</a></li>
+        </ul>
+      </nav>
+
+      <!-- Menu mobile -->
+      <div id="mobile-menu" class="hidden md:hidden bg-gray-900/90">
+        <ul class="flex flex-col items-center space-y-4 py-4 text-gray-200">
+          <li><a href="#hero" class="hover:text-blue-500 ">Accueil</a></li>
+          <li><a href="#about" class="hover:text-blue-500">À propos de moi</a></li>
+          <li><a href="#projects" class="hover:text-blue-500">Mes projets</a></li>
+          <li><a href="#contact" class="hover:text-blue-500">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
+
+      <!--Hero content-->
+     <div class="py-40  m-auto px-10 items-center justify-center">
+      <div class="items-center justify-center m-4">
+        <div class=" bg-gray-800/60 rounded-2xl flex flex-col space-y-4 items-center justify-center p-4 md:m-0 p-10">
+          <h1 class="text-xl font-bold md:text-2xl lg:text-5xl"> <span class="text-orange-400"> Précieux MABENGO </span> </h1>
+          <h2><span class="text-gray-50 text-sm font-bold  md:text-xl">Etudiant en Licence informatique</span></h2>
+          <p class="  text-sm text-gray-50 text-center font-normal md:text-xl text-justify">Passionné par l'informatique, plus particulièrement par les
+            <span class=" text-orange-400">réseaux</span>, la 
+            <span class=" text-orange-400">cybersécurité</span> et le 
+            <span class="text-orange-400">développement</span>. Actuellement en troisième année de Licence informatique à l'Université de Limoges,
+            Je suis à la recherche d'un 
+            <span class="text-orange-400">stage</span> qui me permettra d'acquérir de nouvelles compétences et de participer à des projets concrets.</p>
+        </div>
+      </div>
+     </div>
+  </section>
+  <!--A propos de moi-->
+  <section id="about" class="bg-black items-center py-10">
+    <div class="flex flex-col space-y-0 items-center justify-center">
+     <h2 class="text-3xl text-blue-900 font-bold mb-4 ">À propos de moi</h2>
+     <span class="bg-blue-900 h-1 w-24 block rounded py-0"></span>
+    </div>
+    <div class="border-2 border-blue-800 rounded-lg grid  grid-cols-1 md:grid-cols-2 gap-4 p-10 m-10">
+        <div class=" items-center justify-center w-full h-full ">
+          <img src="/src/assets/images/Profil_img.jpg" class="object-cover rounded-3xl w-full md:h-140" alt="">
+        </div>
+        <div class="text-sm items-center text-center md:text-lg text-justify justify-center items-start p-4 text-gray-400 ">
+            <p class="mb-4 ">Je m’appelle Précieux Mabengo et je suis actuellement étudiant en troisième année de Licence informatique à l’Université de Limoges. Ayant un véritable intérêt pour les réseaux, la cybersécurité et le développement, j’aime comprendre en profondeur comment les systèmes fonctionnent pour mieux les protéger et les optimiser.
+Grâce à mes expériences et aux projets sur lesquels j’ai travaillé, j’ai pu acquérir une solide base technique et expériementer le travail en équipe.
+Curieux et déterminé, je consacre également du temps à développer mes compétences en programmation, en gestion des infrastructures réseaux et en sécurité des systèmes. Mon ambition à long terme est de contribuer à la conception de solutions innovantes pour renforcer la sécurité des infrastructures informatiques et accompagner les entreprises dans la protection de leurs données. </p>
+            <p class="mb-4" >Actuellement à la recherche d’un stage, je souhaite rejoindre une équipe dynamique où je pourrai apprendre, partager mes connaissances et participer activement à des projets concrets en lien avec la cybersécurité, l'infrastructure ou le développement.</p>
+              <a href="/src/assets/Documents/gloire_mabengo_cv.pdf" download="precieux_mabengo_cv" class="text-white items-start bg-blue-800 rounded-2xl px-2 py-2 hover:bg-blue-500 hover:scale-105 transition-ease-in-out duration-300">Télécharger mon CV</a>
+            </div>
+        </div>
+       
+      </div>
+  </section>
+  <!--Mes projets-->
+  <section id="projects" class="bg-neutral-950">
+    <div class=" flex flex-col space-y-0 items-center justify-center py-10 px-10">
+      <h2 class="text-3xl text-blue-900 font-bold mb-4 ">Mes Projets</h2>
+      <span class="bg-blue-900 h-1 w-24 block rounded py-0"></span>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2  gap-10 px-10 text-gray-400 mx-10 pb-10">
+      <!--Projet 1-->
+      <div class="border-1 border-blue-500 p-4 rounded-lg hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 transition-ease-in-out duration-300">
+        <div class="">
+          <img src="/src/assets/images/img1-projet1.png" alt="Blog Personnel" class="mb-4 rounded-lg object-cover">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Projet 1: <span class="text-orange-400">Application web de réservation de séances sportives</span></h3>
+        <p class="mb-4">Une application web permettant aux utilisateurs de créer des comptes, réserver des séances parmi un cataloge d'activités sportives et de demander des devis personnalisés.</p>
+        <a href="/src/project-pages/project1.html" class="text-white bg-blue-800 rounded-2xl px-2 py-2 hover:bg-blue-500 hover:scale-105">En savoir plus</a>
+      </div>
+      <!--Projet 2-->
+      <div class="border-1 border-blue-500 p-4 rounded-lg hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 transition-ease-in-out duration-300">
+        <div>
+          <img src="/src/assets/images/img1-projet2.png" alt="Blog Personnel" class="mb-4 rounded-lg object-cover">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Projet 2: <span class="text-orange-400">Application d'édition de photos avec Java</span> </h3>
+        <p class="mb-4">Une application permettant aux utilisateurs de modifier des photos en utilisant différents filtres et tansformations et enfin de chiffrer et déchiffrer les images.</p><br>
+        <a href="/src/project-pages/project2.html" class="text-white bg-blue-800 rounded-2xl px-2 py-2 hover:bg-blue-500 hover:scale-105">En savoir plus</a>
+      </div>
+      <!--Projet 3-->
+      <div class=" max border-1 border-blue-500 p-4 rounded-lg hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 transition-ease-in-out duration-300">
+        <div>
+          <img src="/src/assets/images/img1-projet3.jpg" alt="Blog Personnel" class="mb-4 rounded-lg object-cover">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Projet 3: <span class="text-orange-400">Système d'authentification sécurisé pour les postes clients avec LDAP</span></h3>
+        <p class="mb-4">Un blog personnel où je partage mes réflexions sur la technologie, le développement et la cybersécurité.</p>
+        <a href="/src/project-pages/project3.html" class="text-white bg-blue-800 rounded-2xl px-2 py-2 hover:bg-blue-500 hover:scale-105">En savoir plus</a>
+      </div>
+       <!--Projet 4-->
+      <div class=" max border-1 border-blue-500 p-4 rounded-lg hover:shadow-lg hover:shadow-blue-500/50 hover:scale-105 transition-ease-in-out duration-300">
+        <div>
+          <img src="/src/assets/images/server_129.jpg" alt="Blog Personnel" class="mb-4 rounded-lg object-cover">
+        </div>
+        <h3 class="text-xl font-bold mb-2">Projet 4: <span class="text-orange-400">Blog Personnel</span></h3>
+        <p class="mb-4">Un blog personnel où je partage mes réflexions sur la technologie, le développement et la cybersécurité.</p>
+        <a href="/src/project-pages/project4.html" class="text-white bg-blue-800 rounded-2xl px-2 py-2 hover:bg-blue-500 hover:scale-105">En savoir plus</a>
+      </div>
+    </div>
+  </section>
+
+  <!--Contacts-->
+  <section id="contact" class="bg-black text-gray-400">
+   <div class="  flex flex-col space-y-0 items-center justify-center pb-10 pt-10 px-10">
+      <h2 class="text-3xl text-blue-900 font-bold pb-4">Contacts</h2>
+       <span class="bg-blue-900 h-1 w-24 block rounded py-0"></span>
+      <p class="p-4">Vous pouvez me contacter via les moyens suivants :</p>
+      <ul>
+  <li class="flex items-center gap-3 mb-3 hover:scale-105 transition-ease-in-out duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.95.68l1.2 3.6a1 1 0 01-.27 1.05l-2.12 2.12a16 16 0 006.36 6.36l2.12-2.12a1 1 0 011.05-.27l3.6 1.2a1 1 0 01.68.95V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+    </svg>
+    <a href="tel:+33612345678" class="hover:text-green-700">+33 6 27 95 56 71</a>
+  </li>
+
+  <li class="flex items-center gap-3 mb-3 hover:scale-105 transition-ease-in-out duration-300">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+    </svg>
+    <a href="mailto:exemple@mail.com" class="hover:text-blue-700">mabengoprecieux@gmail.com</a>
+  </li>
+
+  <li class="flex items-center gap-3 mb-3 hover:scale-105 transition-ease-in-out duration-300">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-sky-700" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M19 0h-14C2.239 0 0 2.239 0 5v14c0 2.761 2.239 5 5 5h14c2.761
+      0 5-2.239 5-5V5c0-2.761-2.239-5-5-5zM8.339 19H5.337V9h3.002v10zM6.837
+      7.736c-.962 0-1.742-.78-1.742-1.742s.78-1.742 1.742-1.742 1.742.78
+      1.742 1.742-.78 1.742-1.742 1.742zM19 19h-3.002v-5.605c0-1.336-.027-3.055-1.863-3.055-1.865
+      0-2.151 1.457-2.151 2.962V19h-3.002V9h2.881v1.367h.041c.402-.762
+      1.385-1.564 2.85-1.564 3.048 0 3.612 2.007 3.612 4.617V19z"/>
+    </svg>
+    <a href="https://www.linkedin.com/in/gloire-precieux-mabengo-416145263" target="_blank" class="hover:text-sky-800">Mon profil LinkedIn</a>
+  </li>
+</ul>
+</div>
+</section>
+</body>
+<script src="/src/JavaScript/index.js"></script>
+</html>
