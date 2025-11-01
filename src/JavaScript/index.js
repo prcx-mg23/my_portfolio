@@ -6,7 +6,7 @@ const hero=document.getElementById("hero");
 
 setInterval(()=>{
     index=(index+1)%bg_images.length;
-    hero.style.backgroundImage=`url('/src/assets/images/${bg_images[index]}')`;
+    hero.style.backgroundImage=`url('src/assets/images/${bg_images[index]}')`;
 },5000);
 
 //Menu burger button
